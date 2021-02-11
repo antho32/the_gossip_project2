@@ -1,0 +1,17 @@
+<h1>Gossip</h1>
+ 
+<% @gossips.each do |gossip| %>
+  
+  <h2><% gossip.titre %></h2>
+
+  <p><% gossip.content %>/p>
+
+  <p><% gossip.nom %>/p>
+
+  <p><% gossip.ville %>/p>
+
+  <p>
+
+    <a href="<%= post_path(post.id) %>" class="btn btn-primary">Lire la suite</a>
+  </p>
+<%end%>
